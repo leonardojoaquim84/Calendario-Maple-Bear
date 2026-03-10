@@ -181,6 +181,13 @@ const ANNOUNCEMENTS = [
     content: 'Acompanhe as novidades e atividades da nossa escola em nosso canal oficial no YouTube.',
     link: 'https://m.youtube.com/@MapleBearM%C3%A9ier',
     date: '09/03/2026'
+  },
+  {
+    title: 'Camisa House Lion/Eagle',
+    content: 'Não esqueça de fazer a encomenda da camisa da House Lion/Eagle',
+    date: '10/03/2026',
+    link: 'https://wa.me/5521967301523',
+    linkLabel: 'Encomende aqui'
   }
 ];
 
@@ -358,7 +365,7 @@ export default function App() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 mt-4 text-red-600 font-bold hover:underline"
                   >
-                    Acessar Canal <ChevronRight size={16} />
+                    {ann.linkLabel || 'Acessar Canal'} <ChevronRight size={16} />
                   </a>
                 )}
               </div>
