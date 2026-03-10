@@ -62,6 +62,96 @@ const INITIAL_EVENTS: Event[] = [
     title: 'Dever de Música',
     description: 'Em comemoração ao dia das mulheres passei um trabalho de casa para cada aluno pesquisar uma mulher importante da música nacional ou internacional, trazer uma foto dessa celebridade feminina e falar um pouco dela, data limite para entrega será até o dia 19/03/2026.',
     type: 'task'
+  },
+  {
+    date: new Date(2026, 6, 6),
+    title: 'Dia da cor favorita',
+    description: 'Dia de vir vestido com sua cor favorita da cabeça aos pés.',
+    type: 'event'
+  },
+  {
+    date: new Date(2026, 6, 7),
+    title: 'Dia das Profissões',
+    description: 'Roupas e acessórios que representem uma profissão dos sonhos.',
+    type: 'event'
+  },
+  {
+    date: new Date(2026, 6, 8),
+    title: 'Dia do Pijama',
+    description: 'Pijamas, pantufas, ursinhos e roupões.',
+    type: 'event'
+  },
+  {
+    date: new Date(2026, 6, 9),
+    title: 'Dia do Personagem Favorito',
+    description: 'Fantasias de personagens de livros, filmes ou desenhos.',
+    type: 'event'
+  },
+  {
+    date: new Date(2026, 6, 10),
+    title: 'Dia do Talento Criativo',
+    description: 'Roupa que represente um talento (dança, esporte, música, artes).',
+    type: 'event'
+  },
+  {
+    date: new Date(2026, 9, 5),
+    title: 'Dia das Fantasias Livres',
+    description: 'As crianças escolhem qualquer fantasia que amem.',
+    type: 'event'
+  },
+  {
+    date: new Date(2026, 9, 6),
+    title: 'Dia do Super-Herói / Heroína da Vida Real',
+    description: 'Fantasias de heróis ou pessoas inspiradoras (médicos, bombeiros, professores).',
+    type: 'event'
+  },
+  {
+    date: new Date(2026, 9, 7),
+    title: 'Dia do Circo e da Alegria',
+    description: 'Nariz de palhaço, chapéus, listras, suspensórios, roupas coloridas.',
+    type: 'event'
+  },
+  {
+    date: new Date(2026, 9, 8),
+    title: 'Dia do Brinquedo Preferido',
+    description: 'As crianças vêm com uma roupa que combine com o seu brinquedo favorito.',
+    type: 'event'
+  },
+  {
+    date: new Date(2026, 9, 9),
+    title: 'Dia do Colorido Divertido',
+    description: 'Roupas neon, estampas misturadas, meias diferentes, acessórios engraçados.',
+    type: 'event'
+  },
+  {
+    date: new Date(2026, 11, 7),
+    title: 'Dia do Cientista/Futurista',
+    description: 'Avental, jaleco, metálico, prateado, papel laminado, robôs, anteninhas, acessórios e moda “futurista”.',
+    type: 'event'
+  },
+  {
+    date: new Date(2026, 11, 8),
+    title: 'Dia do Mar e Oceano',
+    description: 'Cores azuis, sereias, peixinhos, marinheiros e piratas.',
+    type: 'event'
+  },
+  {
+    date: new Date(2026, 11, 9),
+    title: 'Dia dos Animais',
+    description: 'Roupas, tiaras, estampas ou acessórios de bichos.',
+    type: 'event'
+  },
+  {
+    date: new Date(2026, 11, 10),
+    title: 'Dia das Culturas do Mundo',
+    description: 'Roupas típicas, cores de bandeiras, acessórios culturais (respeitosos e simples).',
+    type: 'event'
+  },
+  {
+    date: new Date(2026, 11, 11),
+    title: 'Dia Esportivo',
+    description: 'Camisa de time, roupas de esporte, viseiras, munhequeiras.',
+    type: 'event'
   }
 ];
 
