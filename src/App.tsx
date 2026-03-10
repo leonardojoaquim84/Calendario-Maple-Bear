@@ -65,9 +65,21 @@ const INITIAL_EVENTS: Event[] = [
   }
 ];
 
-const FILES: { name: string; size: string }[] = [];
+const FILES: { name: string; size: string; url?: string }[] = [
+  { 
+    name: 'Apostila Ukulele.pdf', 
+    size: '2.4 MB',
+    url: 'https://drive.google.com/file/d/1Dva0KTTJg9co-ckzcV3TPs-lZ-zu0AZW/view?usp=drive_link'
+  }
+];
 
 const ANNOUNCEMENTS = [
+  {
+    title: 'Apostila Ukulele',
+    content: 'Já está disponível para download a apostila de Ukulele para o Year 2. Acesse a aba de Arquivos para baixar.',
+    date: '09/03/2026',
+    link: 'https://drive.google.com/file/d/1Dva0KTTJg9co-ckzcV3TPs-lZ-zu0AZW/view?usp=drive_link'
+  },
   {
     title: 'YouTube Maple Bear Méier',
     content: 'Acompanhe as novidades e atividades da nossa escola em nosso canal oficial no YouTube.',
@@ -77,7 +89,7 @@ const ANNOUNCEMENTS = [
 ];
 
 export default function App() {
-  const [currentMonth, setCurrentMonth] = useState(new Date(2026, 2, 9)); // Start at March 2026
+  const [currentMonth, setCurrentMonth] = useState(new Date()); // Start at current date
   const [activeTab, setActiveTab] = useState<'calendar' | 'files' | 'announcements'>('calendar');
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
 
@@ -259,9 +271,20 @@ export default function App() {
                         <p className="text-xs text-gray-500">{file.size}</p>
                       </div>
                     </div>
-                    <button className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-full transition-all">
-                      <Download size={20} />
-                    </button>
+                    {file.url ? (
+                      <a 
+                        href={file.url} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-full transition-all"
+                      >
+                        <Download size={20} />
+                      </a>
+                    ) : (
+                      <button className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-full transition-all">
+                        <Download size={20} />
+                      </button>
+                    )}
                   </div>
                 ))
               ) : (
