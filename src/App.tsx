@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { 
   format, 
   addMonths, 
@@ -92,6 +92,11 @@ export default function App() {
   const [currentMonth, setCurrentMonth] = useState(new Date()); // Start at current date
   const [activeTab, setActiveTab] = useState<'calendar' | 'files' | 'announcements'>('calendar');
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
+  const [accessTime, setAccessTime] = useState<string>('');
+
+  useEffect(() => {
+    setAccessTime(format(new Date(), "dd/MM/yyyy 'às' HH:mm:ss"));
+  }, []);
 
   const nextMonth = () => setCurrentMonth(addMonths(currentMonth, 1));
   const prevMonth = () => setCurrentMonth(subMonths(currentMonth, 1));
@@ -227,6 +232,13 @@ export default function App() {
                 })}
               </div>
             </div>
+            {accessTime && (
+              <div className="mt-4 text-center">
+                <p className="text-[10px] text-gray-400 font-medium">
+                  Acesso em: {accessTime}
+                </p>
+              </div>
+            )}
           </div>
         )}
 
