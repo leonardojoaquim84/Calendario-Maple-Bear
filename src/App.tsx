@@ -64,6 +64,12 @@ const INITIAL_EVENTS: Event[] = [
     type: 'task'
   },
   {
+    date: new Date(2026, 2, 31),
+    title: 'House challenge',
+    description: 'prazo para entrega de caixa de Bis',
+    type: 'event'
+  },
+  {
     date: new Date(2026, 6, 6),
     title: 'Dia da cor favorita',
     description: 'Dia de vir vestido com sua cor favorita da cabeça aos pés.',
