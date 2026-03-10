@@ -116,8 +116,11 @@ export default function App() {
       {/* Header */}
       <header className="border-b border-gray-100 px-4 py-4 sticky top-0 bg-white z-10">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="bg-red-600 p-2 rounded-lg">
+          <div 
+            className="flex items-center gap-3 cursor-pointer group"
+            onClick={() => setActiveTab('calendar')}
+          >
+            <div className="bg-red-600 p-2 rounded-lg group-hover:bg-red-700 transition-colors">
               <GraduationCap className="text-white w-6 h-6" />
             </div>
             <div>
