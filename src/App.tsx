@@ -58,6 +58,12 @@ const INITIAL_EVENTS: Event[] = [
     type: 'event'
   },
   {
+    date: new Date(2026, 2, 18),
+    title: 'Pesquisa: Transformações na Cidade',
+    description: 'Fazer uma pesquisa com exemplos de transformações em sua cidade: como ela era antigamente e como é agora - novas casas novos hábitos, novas brincadeiras e outras coisas.',
+    type: 'task'
+  },
+  {
     date: new Date(2026, 2, 19), // March 19, 2026
     title: 'Dever de Música',
     description: 'Em comemoração ao dia das mulheres passei um trabalho de casa para cada aluno pesquisar uma mulher importante da música nacional ou internacional, trazer uma foto dessa celebridade feminina e falar um pouco dela, data limite para entrega será até o dia 19/03/2026.',
