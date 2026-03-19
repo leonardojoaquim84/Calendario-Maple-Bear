@@ -70,6 +70,12 @@ const INITIAL_EVENTS: Event[] = [
     type: 'task'
   },
   {
+    date: new Date(2026, 2, 25),
+    title: 'Atividades Unit 1 ELA',
+    description: 'Estamos enviando algumas atividades da Unit 1 de ELA para que vocês escolham uma delas e justifiquem a escolha na tarjeta. Pedimos que nos enviem todas as atividades de volta. A atividade escolhida será incluída no portfólio',
+    type: 'task'
+  },
+  {
     date: new Date(2026, 2, 31),
     title: 'House challenge',
     description: 'prazo para entrega de caixa de Bis',
